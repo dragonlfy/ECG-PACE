@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ecg-pace"
+version = "0.1.0"
+description = "Hypothesis-guided, decision-aware evidence acquisition for ECG interpretation"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "ECG-PACE Contributors"}]
+dependencies = ["numpy>=1.24,<3"]
+keywords = ["ECG", "evidence acquisition", "agent", "clinical AI", "decision making"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Scientific/Engineering :: Medical Science Apps",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.7"]
+
+[project.scripts]
+ecg-pace = "ecgpace.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["ecgpace*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100

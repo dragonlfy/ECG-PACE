@@ -1,0 +1,9 @@
+{
+  "atrial_ectopy": {
+    "title": "Atrial ectopy evidence checklist",
+    "description": "Inspect premature timing and atrial activity; use morphology and beat context to differentiate from ventricular ectopy.",
+    "measurement_requirements": ["RR timing", "P-wave activity", "QRS morphology"],
+    "source": "Local research checklist: replace with attributable, reviewed, versioned clinical references",
+    "version": "example-1"
+  }
+}

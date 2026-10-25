@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite the ECG-PACE manuscript when using this software."
+title: "ECG-PACE: Hypothesis-Guided Evidence Acquisition for ECG Reasoning with Large Language Models"
+type: software
+authors:
+  - name: "ECG-PACE Contributors"
+version: "0.1.0"
+date-released: "2026-10-26"
+license: MIT
+abstract: "Research software for prospective, hypothesis-guided ECG evidence acquisition with a frozen reasoning model."

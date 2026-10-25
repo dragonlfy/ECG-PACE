@@ -1,0 +1,27 @@
+[
+  {
+    "id": "rr_ii",
+    "kind": "rr_intervals",
+    "lead": "II",
+    "cost": 0.15,
+    "hypotheses": ["premature_atrial_contractions"],
+    "support_rule": {"feature": "max_rr_change_ms", "op": "gt", "threshold": 180}
+  },
+  {
+    "id": "qrs_v1",
+    "kind": "qrs_duration",
+    "lead": "V1",
+    "cost": 0.25,
+    "hypotheses": ["wide_qrs"],
+    "support_rule": {"feature": "qrs_ms", "op": "ge", "threshold": 120}
+  },
+  {
+    "id": "p_v1",
+    "kind": "p_wave_presence",
+    "lead": "V1",
+    "cost": 0.25,
+    "hypotheses": ["premature_atrial_contractions"]
+  },
+  {"id": "criteria_pac", "kind": "clinical_criterion", "cost": 0.12,
+   "hypotheses": ["premature_atrial_contractions"], "criterion_key": "atrial_ectopy"}
+]
